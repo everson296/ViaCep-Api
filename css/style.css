@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgba(41, 41, 41, .6), rgba(41, 41, 41, .6)), url(../img/planet.jpg);
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.erro{
+    height: 40px;
+    width: 280px;
+    border-radius: 5px;
+    background: #d44242;
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    font-family: Poppins, arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: start;
+    color: #292929;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; 
+}
+
+#container{
+    height: auto;
+    width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.configInput{
+    height: 100px;
+    width: 410px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.configInput span{
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    font-family: Poppins, arial;
+    text-align: start;
+    color: #00ff91;
+}
+
+input[type="text"]{
+    height: 40px;
+    width: 400px;
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    font-size: 1.2em;
+    font-family: Poppins, arial;
+    color: #00ff91;
+    margin-bottom: 10px;
+    transition: all .5s;
+    padding-left: 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type="text"]:focus{
+    border: 2px solid #00ff91;
+}
+
+input[type="submit"]{
+    height: 40px;
+    width: 180px;
+    background: transparent;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    font-size: 1.2em;
+    font-family: Poppins, arial;
+    color: rgba(255, 255, 255, .5);
+    margin-bottom: 10px;
+    transition: all .5s;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border: 2px solid #00ff91;
+    color: #00ff91;
+}
+
+@media (max-width: 1000px){
+    #container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+
